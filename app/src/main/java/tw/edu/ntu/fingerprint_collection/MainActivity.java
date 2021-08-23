@@ -107,6 +107,7 @@ public class MainActivity extends AppCompatActivity {
             FileOutputStream fos = openFileOutput(fileName, getApplicationContext().MODE_APPEND);
             fos.write(show.getBytes());
             fos.close();
+            Toast.makeText(this, "Successful!", Toast.LENGTH_LONG).show();
         }catch (IOException e){
             Toast.makeText(this, e.toString(), Toast.LENGTH_LONG).show();
         }
